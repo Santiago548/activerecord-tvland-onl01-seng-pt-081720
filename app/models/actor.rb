@@ -9,5 +9,6 @@ class Actor < ActiveRecord::Base
   def list_roles
     characters.map do |character|
       "#{character.full_name} #{character.shows}"
+    end
   end
 end
